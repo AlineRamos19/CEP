@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CEP</string>
+    <string name="enter_cep">Insira o CEP para pesquisar</string>
+    <string name="hint_cep">CEP</string>
+    <string name="btn_send">BUSCAR</string>
+    <string name="label_cep">CEP</string>
+    <string name="district_label">Bairro</string>
+    <string name="city_label">Cidade</string>
+</resources>

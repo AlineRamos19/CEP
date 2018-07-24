@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    android:orientation="vertical"
+    tools:context=".activity.DateCep">
+
+    <LinearLayout
+        android:id="@+id/linear_cep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/backgroud_data_cep"
+                android:gravity="start"
+                android:textColor="@android:color/white"
+                android:padding="6dp"
+                android:text="@string/label_cep"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="@drawable/background_cep"
+                android:id="@+id/cep_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="3"
+                android:padding="6dp"
+                tools:text="08830-325" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:id="@+id/adress_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/backgroud_data_cep"
+                android:gravity="start"
+                android:padding="6dp"
+                android:textStyle="bold"
+                tools:text="Rua" />
+
+            <TextView
+                android:background="@drawable/background_cep"
+                android:id="@+id/adress_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="3"
+                android:padding="6dp"
+                tools:text="Antonio Marques de Oliveira" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/backgroud_data_cep"
+                android:gravity="start"
+                android:padding="6dp"
+                android:text="@string/district_label"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="@drawable/background_cep"
+                android:id="@+id/district_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="3"
+                android:padding="6dp"
+                tools:text="Vila Nova Aparecida" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/backgroud_data_cep"
+                android:gravity="start"
+                android:padding="6dp"
+                android:text="@string/city_label"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="@drawable/background_cep"
+                android:id="@+id/city_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="3"
+                android:padding="6dp"
+                tools:text="Mogi das Cruzes" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -9,6 +9,8 @@
     android:focusableInTouchMode="true">
 
     <TextView
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-thin"
         android:id="@+id/label_infor"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -32,6 +34,7 @@
         android:layout_height="wrap_content">
 
         <com.santalu.maskedittext.MaskEditText
+            android:fontFamily="sans-serif-thin"
             android:id="@+id/edit_cep"
             android:inputType="number"
             app:met_mask="#####-###"
@@ -46,9 +49,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_send"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="18sp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="24dp"/>

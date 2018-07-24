@@ -22,6 +22,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:fontFamily="sans-serif-thin"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -33,6 +34,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:fontFamily="sans-serif-thin"
                 android:background="@drawable/background_cep"
                 android:id="@+id/cep_value"
                 android:layout_width="0dp"
@@ -51,6 +53,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:fontFamily="sans-serif-thin"
                 android:textColor="@android:color/white"
                 android:id="@+id/adress_type"
                 android:layout_width="0dp"
@@ -63,6 +66,7 @@
                 tools:text="Rua" />
 
             <TextView
+                android:fontFamily="sans-serif-thin"
                 android:background="@drawable/background_cep"
                 android:id="@+id/adress_name"
                 android:layout_width="0dp"
@@ -81,6 +85,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:fontFamily="sans-serif-thin"
                 android:textColor="@android:color/white"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -92,6 +97,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:fontFamily="sans-serif-thin"
                 android:background="@drawable/background_cep"
                 android:id="@+id/district_value"
                 android:layout_width="0dp"
@@ -108,6 +114,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:fontFamily="sans-serif-thin"
                 android:textColor="@android:color/white"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -119,6 +126,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:fontFamily="sans-serif-thin"
                 android:background="@drawable/background_cep"
                 android:id="@+id/city_value"
                 android:layout_width="0dp"
@@ -137,5 +145,17 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:visibility="gone" />
+
+    <TextView
+        android:drawableTop="@drawable/ic_error"
+        android:drawablePadding="12dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_cep_not_found"
+        android:text="CEP não localizado"
+        android:fontFamily="sans-serif-thin"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
 
 </LinearLayout>
